@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pascal Prfst Portfolio</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <a href="#" class="nav-logo">LOGO</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-section" class="nav-link">Über mich</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project-section" class="nav-link">Projekte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <section id="hero-section" class="hero-section">
+            
+            <h1>Webentwickler</h1>
+        </section>
+        <section id="about-section" class="about-section">
+            <h2>Über mich</h2>
+            <div class="pattern-dots-md
+            image-container">
+                <img src="./src/images/me.jpg"/>
+                </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Quisque ullamcorper felis elementum nisl eleifend, et congue quam tristique. 
+                Donec sollicitudin vulputate erat vel elementum. Sed diam lectus, 
+                rhoncus nec dui et, rhoncus scelerisque ligula. 
+                Aenean pretium lacus non ligula fringilla, 
+                in pharetra dolor gravida. Phasellus nibh sem, cursus non enim id, 
+                laoreet tristique leo. Morbi finibus sapien vel sollicitudin eleifend. 
+                Phasellus auctor blandit rutrum. Vivamus augue lorem, 
+                venenatis eu lacinia et, condimentum vel magna. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Cras a orci sapien. Phasellus commodo a nunc quis finibus. 
+                ras sit amet finibus metus, ac ornare arcu.
+            </p>
+            <h3>Techstack</h3>
+            <div class="techstack-container">
+                <img src="src/images/stack-logos/html-logo.png" alt="html logo" class="stack-logo"/>
+                <img src="src/images/stack-logos/css-logo.png" alt="css logo" class="stack-logo"/>
+                <img src="src/images/stack-logos/javascript-logo.png" alt="javascript logo" class="stack-logo"/>
+                <img src="src/images/stack-logos/typescript-logo.png" alt="typescript logo" class="stack-logo"/>
+                <img src="src/images/stack-logos/react-logo.png" alt="react logo" class="stack-logo"/>
+                <img src="src/images/stack-logos/nextjs.png" alt="nextjs logo" class="stack-logo"/>
+            </div>
+        </section>
+        <img src="src/images/wave_top.svg" aria-hidden="true" />
+        <section id="project-section" class="project-section"></section>
+        <img src="src/images/wave_bottom.svg" aria-hidden="true" />
+        <section id="contact-section" class="contact-section">
+            <h2>Trete mit mir in Kontakt!</h2>
+            <p>Ich kann dir helfen? Interesse an einer Zusammenarbeit? Oder vielleicht doch einfach nur Hallo sagen? So kannst du
+                am schnellsten mit mir Kontakt aufnehmen.
+            </p>
+            <form>
+                <label for"email"></label>
+                <input type="email" id="email" name="email" placeholder="Deine Email..."/>
+                <input type="text" placeholder="Betreff..."/>
+                <textarea rows="6" placeholder="Deine Nachicht..."></textarea>
+                <input type="checkbox" id="dsvgo"/>
+                <label for"dsvgo">Ich habe die Datenschutzerklärung gelesen.</label>
+            </form>
+            <div class="icon-container">
+                <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+                <ion-icon name="logo-twitter" class="contact-icon"></ion-icon>
+                <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-links-container">
+            <h3>Links</h3>
+                <div> 
+                    <ul>
+                        <li>
+                            <a href="#">Start</a>
+                        </li>
+                        <li>
+                            <a href="#">Über mich</a>
+                        </li>
+                        <li>
+                            <a href="#">Projekte</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Impressum</a>
+                        </li>
+                        <li>
+                            <a href="#">Datenschutzerklärung</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer-socials-container">
+            <h3>Socials</h3>
+                <div> 
+                    <ul>
+                        <li>
+                            <a href="#">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="#">Github</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer-logo-container">
+            <div class="logo">
+                PP
+            </div>
+        </div>
+    </footer>
+    <script src="code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
