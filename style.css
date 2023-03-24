@@ -11,7 +11,7 @@ html {
 }
 
 :root {
-  --black: #1d1d1d;
+  --black: #1a1a1a;
   --white: #ffffff;
   --grey: #ced3d9;
   --pink: #a91b75;
@@ -31,12 +31,22 @@ img {
 
 /* ########## FONTS ########## */
 h1 {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 h2 {
   font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.headline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 p {
@@ -86,6 +96,10 @@ header a {
   align-items: center;
 }
 
+.nav-logo {
+  width: 11rem;
+}
+
 .nav-item {
   margin-left: 4rem;
 }
@@ -102,15 +116,12 @@ header a {
 
 /* ########## HERO-SECTION ########## */
 .hero-section {
-  /* background-image: url("./src/images/hero-bg-flurry.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
   width: 100%;
-  height: 90vh;
+  height: 90dvh;
   color: var(--white);
   display: grid;
   place-content: center;
+  text-align: center;
 }
 /* ########## ABOUT-SECTION ########## */
 .about-section {
@@ -147,75 +158,40 @@ header a {
   width: 80px;
 }
 /* ########## PROJECT-SECTION ########## */
-.project-section {
-  background-color: var(--black);
-  width: 100%;
-  height: 100vh;
-}
-/* ########## CONTACT-SECTION ########## */
-.contact-section {
-  width: 100%;
-  padding: 3rem 2rem;
-  text-align: center;
+
+/* ########## FX ########## */
+.word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: word 7000ms infinite ease-in-out;
 }
 
-.contact-section h2 {
-  margin-bottom: 2rem;
+.word:nth-child(1) {
+  animation-delay: 3500ms;
 }
 
-.contact-section form {
-  margin-top: 3rem;
-  width: 100%;
+@keyframes word {
+  0%,
+  5%,
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  35%,
+  65% {
+    filter: blur(1em);
+    opacity: 0;
+  }
 }
 
-.contact-section form input {
-  padding: 0.5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--grey);
+.underline {
+  background-image: linear-gradient(90deg, var(--pink), var(--blue));
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
 }
-
-.contact-section form input[type="checkbox"] {
-  width: auto;
-  margin-right: 0.5rem;
-}
-
-.contact-section form textarea {
-  padding: 0.5rem;
-  width: 100%;
-  border-radius: 0.25rem;
-  border: 1px solid var(--grey);
-  margin-bottom: 1rem;
-  resize: none;
-}
-
-.contact-section form input::placeholder,
-.contact-section form textarea::placeholder {
-  color: var(--lightBlue);
-}
-
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.contact-icon {
-  font-size: 2rem;
-  color: var(--lightBlue);
-  transition: all;
-  transition-timing-function: ease-in-out;
-  transition-duration: 200ms;
-}
-
-.contact-icon:hover {
-  cursor: pointer;
-  color: var(--blue);
-}
-
 /* ########## FOOTER-SECTION ########## */
 .footer {
   padding: 2.5rem;
@@ -276,6 +252,7 @@ header a {
     flex-direction: column;
     background-color: var(--black);
     width: 100%;
+    z-index: 2;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
