@@ -31,8 +31,8 @@ img {
 
 /* ########## FONTS ########## */
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
   text-transform: uppercase;
   width: 100%;
 }
@@ -40,6 +40,11 @@ h1 {
 h2 {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 .headline-container {
@@ -54,7 +59,7 @@ p {
 }
 
 a {
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 /* ########## HEADER ########## */
@@ -97,7 +102,7 @@ header a {
 }
 
 .nav-logo {
-  width: 11rem;
+  width: 9rem;
 }
 
 .nav-item {
@@ -130,14 +135,17 @@ header a {
   text-align: center;
 }
 
-.about-section h3 {
-  margin: 3rem 0rem;
+.about-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.content-container {
+  margin: 5rem 0rem;
 }
 
 .image-container {
   width: 100%;
   height: 100%;
-  margin: 2rem 0rem;
   position: relative;
   color: var(--blue);
 }
@@ -146,30 +154,152 @@ header a {
   padding: 1.5rem;
 }
 
+.question-container {
+  margin-bottom: 1.25rem;
+}
+
+.question {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
 .techstack-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .stack-logo {
-  width: 80px;
+  width: 75px;
 }
 /* ########## PROJECT-SECTION ########## */
 
-/* ########## FX ########## */
+/* ########## FOOTER-SECTION ########## */
+.footer {
+  padding: 2.5rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.footer-links-container {
+  margin-bottom: 2.5rem;
+}
+
+.footer-links-container div:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.footer h3 {
+  color: var(--lightBlue);
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-container ion-icon {
+  font-size: 1.25rem;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.logo-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 12rem;
+}
+
+/* ########## ANIMATIONS ########## */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.25s;
+}
+
+.show {
+  transform: translateX(0);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.stack-logo:nth-of-type(1) {
+  transition-delay: 125ms;
+}
+.stack-logo:nth-of-type(2) {
+  transition-delay: 250ms;
+}
+.stack-logo:nth-of-type(3) {
+  transition-delay: 375ms;
+}
+.stack-logo:nth-of-type(4) {
+  transition-delay: 500ms;
+}
+.stack-logo:nth-of-type(5) {
+  transition-delay: 625ms;
+}
+.stack-logo:nth-of-type(6) {
+  transition-delay: 750ms;
+}
+.stack-logo:nth-of-type(7) {
+  transition-delay: 875ms;
+}
+.stack-logo:nth-of-type(8) {
+  transition-delay: 1000ms;
+}
+.stack-logo:nth-of-type(9) {
+  transition-delay: 1125ms;
+}
+.stack-logo:nth-of-type(10) {
+  transition-delay: 1250ms;
+}
+.stack-logo:nth-of-type(11) {
+  transition-delay: 1375ms;
+}
+
 .word {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: word 7000ms infinite ease-in-out;
+  animation: word 8000ms infinite ease-in-out;
 }
 
 .word:nth-child(1) {
-  animation-delay: 3500ms;
+  animation-delay: 4000ms;
 }
 
 @keyframes word {
@@ -192,56 +322,6 @@ header a {
   background-size: 100% 30%;
   background-repeat: no-repeat;
 }
-/* ########## FOOTER-SECTION ########## */
-.footer {
-  padding: 2.5rem;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.footer-links-container {
-  margin-bottom: 2.5rem;
-}
-
-.footer-links-container div:first-of-type {
-  margin-bottom: 1.5rem;
-}
-
-.footer h3 {
-  color: var(--lightBlue);
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer a {
-  text-decoration: none;
-  color: var(--white);
-  font-weight: 400;
-}
-
-.footer-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5rem;
-}
-
-.logo {
-  display: grid;
-  place-content: center;
-  width: 5rem;
-  height: 5rem;
-  border: 3px solid white;
-  border-radius: 50%;
-  font-size: 2rem;
-  color: var(--lightBlue);
-}
-
-/* ########## ANIMATIONS ########## */
 
 /* ########## RESPONSIVE ########## */
 @media only screen and (max-width: 768px) {
@@ -281,5 +361,65 @@ header a {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 1.5rem 10%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .about-section {
+    padding: 3rem 10%;
+    text-align: left;
+  }
+
+  .image-container {
+    min-width: 30rem;
+    max-width: 32rem;
+  }
+
+  .content-container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .techstack-container {
+    gap: 3.5rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .stack-logo {
+    width: 90px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 2.5rem 10%;
+    align-items: flex-start;
+  }
+
+  .footer-links-container {
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
+
+  .logo-container {
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .logo {
+    width: 15rem;
   }
 }

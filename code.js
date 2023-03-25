@@ -16,3 +16,21 @@ navLink.forEach(link =>
     navMenu.classList.remove("active");
   })
 );
+
+// Navbar on scroll
+document.addEventListener("scroll", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+});
+
+// animate on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(element => observer.observe(element));

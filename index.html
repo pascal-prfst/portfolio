@@ -41,36 +41,95 @@
         <h1 class="word">Webentwickler</h1>
       </section>
       <section id="about-section" class="about-section">
-        <div class="headline-container">
+        <div class="headline-container hidden">
           <h2 class="underline">Über mich</h2>
         </div>
-        <div class="pattern-dots-md image-container">
-          <img src="./src/images/me.jpg" />
+        <div class="content-container">
+          <div class="pattern-dots-md image-container hidden">
+            <img src="./src/images/me.jpg" alt="image of pascal" />
+          </div>
+          <div class="info-container">
+            <div class="question-container hidden">
+              <p class="question"><b>Wer bist du?</b></p>
+              <p>Ich bin Pascal, 31 Jahre alt, aus Hannover und ich liebe das Programmieren.</p>
+            </div>
+            <div class="question-container hidden">
+              <p class="question"><b>Für was &#128293 du?</b></p>
+              <p>Programmieren. Tech-Trends. Fortschritt. Innovation.</p>
+            </div>
+            <div class="question-container hidden">
+              <p class="question"><b>Beschreibe dich in 3 Worten.</b></p>
+              <p>Zielstrebig. Diszipliniert. Begeisterungsfähig.</p>
+            </div>
+            <div class="question-container hidden">
+              <p class="question"><b>Wie bist du zum Programmieren gekommen.</b></p>
+              <p>
+                Durch Zufall, bin ich durch rumklicken auf Youtube auf ein
+                <a href="#">Video</a> gestoßen. <span style="color: var(--blue)">Kann man innerhalb von 3 Monaten programmieren
+                  lernen?</span> Nach dem Video war ich direkt gefangen im Youtube Algorithmus und mir wurden
+                diverse andere Videos zum Theme "Coding" vorgeschlagen. Mein Interesse wurde größer
+                aber wie fängt man an?
+              </p>
+            </div>
+            <div class="question-container hidden">
+              <p class="question"><b>Was sind deine Ziele?</b></p>
+              <p>
+                Aktuell liegen meine Stärken im Frontend-Bereich, 
+                wo ich mich  gut mit der Entwicklung von Benutzeroberflächen auskenne. Allerdings strebe ich in Zukunft an, meine Fähigkeiten zu erweitern 
+                und mich auch im Bereich Fullstack-Entwicklung zu engagieren. 
+                Zusätzlich möchte ich mich auch in der mobilen App-Entwicklung weiterbilden und Erfahrungen sammeln.
+              </p>
+            </div>
+          </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper felis
-          elementum nisl eleifend, et congue quam tristique. Donec sollicitudin vulputate erat vel
-          elementum. Sed diam lectus, rhoncus nec dui et, rhoncus scelerisque ligula. Aenean pretium
-          lacus non ligula fringilla, in pharetra dolor gravida. Phasellus nibh sem, cursus non enim
-          id, laoreet tristique leo. Morbi finibus sapien vel sollicitudin eleifend. Phasellus
-          auctor blandit rutrum. Vivamus augue lorem, venenatis eu lacinia et, condimentum vel
-          magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a orci sapien.
-          Phasellus commodo a nunc quis finibus. ras sit amet finibus metus, ac ornare arcu.
-        </p>
-        <h3>Techstack</h3>
+        <div class="headline-container">
+          <h3 class="underline hidden">Techstack</h3>
+        </div>
         <div class="techstack-container">
-          <img src="src/images/stack-logos/html-logo.png" alt="html logo" class="stack-logo" />
-          <img src="src/images/stack-logos/css-logo.png" alt="css logo" class="stack-logo" />
           <img
-            src="src/images/stack-logos/javascript-logo.png"
-            alt="javascript logo"
-            class="stack-logo" />
+            src="./src/images/stack-logos/html-logo.png"
+            class="stack-logo hidden"
+            alt="html logo" />
           <img
-            src="src/images/stack-logos/typescript-logo.png"
-            alt="typescript logo"
-            class="stack-logo" />
-          <img src="src/images/stack-logos/react-logo.png" alt="react logo" class="stack-logo" />
-          <img src="src/images/stack-logos/nextjs.png" alt="nextjs logo" class="stack-logo" />
+            src="./src/images/stack-logos/css-logo.png"
+            class="stack-logo hidden"
+            alt="css logo" />
+          <img
+            src="./src/images/stack-logos/javascript-logo.png"
+            class="stack-logo hidden"
+            alt="javascript logo" />
+          <img
+            src="./src/images/stack-logos/github-logo.png"
+            class="stack-logo hidden"
+            alt="github logo" />
+          <img
+            src="./src/images/stack-logos/git-logo.png"
+            class="stack-logo hidden"
+            alt="git logo" />
+          <img
+            src="./src/images/stack-logos/typescript-logo.png"
+            class="stack-logo hidden"
+            alt="typescript logo" />
+          <img
+            src="./src/images/stack-logos/react-logo.png"
+            class="stack-logo hidden"
+            alt="react logo" />
+          <img
+            src="./src/images/stack-logos/nextjs-logo.png"
+            class="stack-logo hidden"
+            alt="nextjs logo" />
+          <img
+            src="./src/images/stack-logos/nodejs-logo.png"
+            class="stack-logo hidden"
+            alt="nodejs logo" />
+          <img
+            src="./src/images/stack-logos/mongo-logo.png"
+            class="stack-logo hidden"
+            alt="mongo logo" />
+          <img
+            src="./src/images/stack-logos/angular-logo.png"
+            class="stack-logo hidden"
+            alt="angular logo" />
         </div>
       </section>
     </main>
@@ -90,32 +149,30 @@
             </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="#">Impressum</a>
-            </li>
-            <li>
-              <a href="#">Datenschutzerklärung</a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div class="footer-socials-container">
         <h3>Socials</h3>
         <div>
           <ul>
             <li>
-              <a href="#">Linkedin</a>
+              <a href="#">
+                <div class="icon-container">
+                  <ion-icon name="logo-linkedin"></ion-icon>LinkedIn
+                </div>
+              </a>
             </li>
             <li>
-              <a href="#">Github</a>
+              <a href="#">
+                <div class="icon-container">
+                  <ion-icon name="logo-github"></ion-icon>Github
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer-logo-container">
-        <div class="logo">PP</div>
+      <div class="logo-container">
+        <img class="logo" src="./src/images/logo.png" alt="pascal-prfst-logo" />
       </div>
     </footer>
     <script src="code.js"></script>
@@ -126,29 +183,29 @@
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       new FinisherHeader({
-        count: 100,
+        count: 14,
         size: {
-          min: 2,
-          max: 8,
+          min: 1300,
+          max: 1500,
           pulse: 0,
         },
         speed: {
           x: {
-            min: 0,
-            max: 0.4,
+            min: 0.6,
+            max: 3,
           },
           y: {
-            min: 0,
-            max: 0.6,
+            min: 0.6,
+            max: 3,
           },
         },
         colors: {
           background: "#1a1a1a",
-          particles: ["#a91b75", "#1b75a9", "#339fde"],
+          particles: ["#a91b75", "#339fde", "#1b75a9", "#ced3d9"],
         },
-        blending: "overlay",
+        blending: "none",
         opacity: {
-          center: 1,
+          center: 0.6,
           edge: 0,
         },
         skew: -2,
