@@ -225,6 +225,7 @@ header a {
   text-transform: uppercase;
   color: var(--pink);
   font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .technologies {

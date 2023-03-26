@@ -136,8 +136,9 @@
     margin-left: auto;
   }
 
-  .project-card-image-container {
-    height: 20rem;
+  .project-card-image-container img {
+    border-radius: 0rem;
+    height: 100%;
   }
 }
 
