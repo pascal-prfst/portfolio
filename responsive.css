@@ -1,0 +1,125 @@
+/* ########## RESPONSIVE ########## */
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 1.5rem 10%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .about-section {
+    padding: 3rem 10%;
+    text-align: left;
+  }
+
+  .image-container {
+    min-width: 30rem;
+    max-width: 32rem;
+  }
+
+  .content-container {
+    margin-top: 7rem;
+    display: flex;
+    gap: 5rem;
+  }
+
+  .techstack-container {
+    gap: 3.5rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .stack-logo {
+    width: 90px;
+  }
+
+  .project-section {
+    padding: 7rem 10%;
+  }
+
+  .project-card-grid {
+    margin-top: 8rem;
+  }
+
+  .footer {
+    display: flex;
+    padding: 2.5rem 10%;
+    align-items: flex-start;
+  }
+
+  .footer-links-container {
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
+
+  .logo-container {
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .logo {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-card {
+    display: flex;
+    max-width: 70rem;
+    margin-bottom: 6rem;
+  }
+
+  .project-card:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .project-card-image-container {
+    height: 20rem;
+  }
+}

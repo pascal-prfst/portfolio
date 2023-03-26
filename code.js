@@ -34,3 +34,8 @@ const observer = new IntersectionObserver(entries => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach(element => observer.observe(element));
+
+// delay second headline after pageload
+setTimeout(() => {
+  document.getElementById("delay").style.visibility = "visible";
+}, 3500);
