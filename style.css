@@ -225,13 +225,11 @@ header a {
   text-transform: uppercase;
   color: var(--pink);
   font-size: 1.75rem;
-  margin-bottom: 1rem;
 }
 
 .technologies {
-  margin-top: 1rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .technologies-container {
@@ -254,7 +252,7 @@ header a {
 }
 
 .actions-container {
-  margin-top: 3rem;
+  margin-top: auto;
   display: flex;
   gap: 1rem;
   align-items: center;
