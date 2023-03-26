@@ -252,7 +252,7 @@ header a {
 }
 
 .actions-container {
-  margin-top: auto;
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
   align-items: center;

@@ -45,6 +45,9 @@
 .stack-logo:nth-of-type(11) {
   transition-delay: 1375ms;
 }
+.stack-logo:nth-of-type(12) {
+  transition-delay: 1500ms;
+}
 
 .word {
   position: absolute;
