@@ -60,6 +60,14 @@ p {
 
 a {
   line-height: 2rem;
+  text-decoration: none;
+  color: var(--lightBlue);
+  font-weight: 700;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--blue);
 }
 
 /* ########## HEADER ########## */
@@ -177,7 +185,111 @@ header a {
   width: 75px;
 }
 /* ########## PROJECT-SECTION ########## */
+.project-section {
+  padding: 3rem 2rem;
+}
 
+.project-card-grid {
+  margin-top: 4rem;
+}
+
+.project-card {
+  width: 100%;
+  border: 2px solid var(--grey);
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
+}
+
+.project-card-image-container {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem;
+}
+
+.project-card-image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-image-container img {
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+  width: 100%;
+}
+
+.project-card-info {
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-info h4 {
+  text-transform: uppercase;
+  color: var(--pink);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.technologies-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+
+.technologie-badge {
+  color: var(--white);
+  background-color: var(--pink);
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  display: grid;
+  place-content: center;
+}
+
+.actions-container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.actions-container a {
+  border-radius: 0.3rem;
+  border: 1px solid var(--pink);
+  background-color: white;
+  color: var(--black);
+  transition: all 250ms;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.actions-container a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.actions-container a ion-icon {
+  font-size: 1.25rem;
+}
+
+.actions-container a:hover {
+  cursor: pointer;
+  background-color: var(--pink);
+  color: var(--white);
+}
 /* ########## FOOTER-SECTION ########## */
 .footer {
   padding: 2.5rem;
@@ -403,6 +515,14 @@ header a {
     width: 90px;
   }
 
+  .project-section {
+    padding: 3rem 10%;
+  }
+
+  .project-card-grid {
+    margin-top: 8rem;
+  }
+
   .footer {
     display: flex;
     padding: 2.5rem 10%;
@@ -421,5 +541,21 @@ header a {
 
   .logo {
     width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-card {
+    display: flex;
+    max-width: 70rem;
+    margin-bottom: 6rem;
+  }
+
+  .project-card:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .project-card-image-container {
+    height: 20rem;
   }
 }
