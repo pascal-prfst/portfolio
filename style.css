@@ -143,12 +143,8 @@ header a {
   text-align: center;
 }
 
-.about-section h2 {
-  margin-bottom: 1.5rem;
-}
-
 .content-container {
-  margin: 5rem 0rem;
+  margin: 3rem 0rem;
 }
 
 .image-container {
@@ -156,6 +152,7 @@ header a {
   height: 100%;
   position: relative;
   color: var(--blue);
+  margin-bottom: 2rem;
 }
 
 .image-container img {
@@ -186,11 +183,11 @@ header a {
 }
 /* ########## PROJECT-SECTION ########## */
 .project-section {
-  padding: 3rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .project-card-grid {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .project-card {
@@ -353,88 +350,6 @@ header a {
   width: 12rem;
 }
 
-/* ########## ANIMATIONS ########## */
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1.25s;
-}
-
-.show {
-  transform: translateX(0);
-  filter: blur(0px);
-  opacity: 1;
-}
-
-.stack-logo:nth-of-type(1) {
-  transition-delay: 125ms;
-}
-.stack-logo:nth-of-type(2) {
-  transition-delay: 250ms;
-}
-.stack-logo:nth-of-type(3) {
-  transition-delay: 375ms;
-}
-.stack-logo:nth-of-type(4) {
-  transition-delay: 500ms;
-}
-.stack-logo:nth-of-type(5) {
-  transition-delay: 625ms;
-}
-.stack-logo:nth-of-type(6) {
-  transition-delay: 750ms;
-}
-.stack-logo:nth-of-type(7) {
-  transition-delay: 875ms;
-}
-.stack-logo:nth-of-type(8) {
-  transition-delay: 1000ms;
-}
-.stack-logo:nth-of-type(9) {
-  transition-delay: 1125ms;
-}
-.stack-logo:nth-of-type(10) {
-  transition-delay: 1250ms;
-}
-.stack-logo:nth-of-type(11) {
-  transition-delay: 1375ms;
-}
-
-.word {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: word 8000ms infinite ease-in-out;
-}
-
-.word:nth-child(1) {
-  animation-delay: 4000ms;
-}
-
-@keyframes word {
-  0%,
-  5%,
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-  35%,
-  65% {
-    filter: blur(1em);
-    opacity: 0;
-  }
-}
-
-.underline {
-  background-image: linear-gradient(90deg, var(--pink), var(--blue));
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-
 /* ########## RESPONSIVE ########## */
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -500,6 +415,7 @@ header a {
   }
 
   .content-container {
+    margin-top: 7rem;
     display: flex;
     gap: 5rem;
   }
@@ -516,7 +432,7 @@ header a {
   }
 
   .project-section {
-    padding: 3rem 10%;
+    padding: 7rem 10%;
   }
 
   .project-card-grid {
